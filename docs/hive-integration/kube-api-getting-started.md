@@ -489,6 +489,7 @@ Events:
 ```
 
 ###### assisted-service log:
+{% raw %}
 ```go
 time="2021-06-29T15:45:19Z" level=info msg="BareMetalHost Reconcile started" func="github.com/openshift/assisted-service/internal/controller/controllers.(*BMACReconciler).Reconcile" file="/go/src/github.com/openshift/origin/internal/controller/controllers/bmh_agent_controller.go:139" bare_metal_host=ostest-extraworker-4 bare_metal_host_namespace=demo-worker4 go-id=655 request_id=e526f6a1-77a1-4aea-8331-4872dbfe3b4a
 time="2021-06-29T15:45:19Z" level=debug msg="Started BMH reconcile for demo-worker4/ostest-extraworker-4" func="github.com/openshift/assisted-service/internal/controller/controllers.(*BMACReconciler).reconcileBMH" file="/go/src/github.com/openshift/origin/internal/controller/controllers/bmh_agent_controller.go:503" bare_metal_host=ostest-extraworker-4 bare_metal_host_namespace=demo-worker4 go-id=655 request_id=e526f6a1-77a1-4aea-8331-4872dbfe3b4a
@@ -518,6 +519,7 @@ time="2021-06-29T15:45:33Z" level=debug msg="Pushing cluster event single-node d
 time="2021-06-29T15:45:33Z" level=info msg="ClusterDeployment Reconcile started" func="github.com/openshift/assisted-service/internal/controller/controllers.(*ClusterDeploymentsReconciler).Reconcile" file="/go/src/github.com/openshift/origin/internal/controller/controllers/clusterdeployments_controller.go:115" cluster_deployment=single-node cluster_deployment_namespace=demo-worker4 go-id=684 request_id=9d4b6bae-b3a2-420f-ad4b-12bb4fa3d5da
 time="2021-06-29T15:45:33Z" level=info msg="ClusterDeployment Reconcile ended" func="github.com/openshift/assisted-service/internal/controller/controllers.(*ClusterDeploymentsReconciler).Reconcile.func1" file="/go/src/github.com/openshift/origin/internal/controller/controllers/clusterdeployments_controller.go:112" agent_cluster_install=test-agent-cluster-install agent_cluster_install_namespace=demo-worker4 cluster_deployment=single-node cluster_deployment_namespace=demo-worker4 go-id=684 request_id=9d4b6bae-b3a2-420f-ad4b-12bb4fa3d5da
 ```
+{% endraw %}
 
 ###### Inspect Assisted Service Cluster Events
 Get the full event list here:
